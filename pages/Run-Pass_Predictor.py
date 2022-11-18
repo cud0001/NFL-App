@@ -61,13 +61,13 @@ def filter_data(X):
     return Xdf_c
 
 
-pickle_in1=open('/pages/classifier1downrp.pkl', 'rb')
+pickle_in1=open('/app/nfl-app/pages/classifier1downrp.pkl', 'rb')
 classifier1=load(pickle_in1)
-pickle_in2=open('/pages/classifier2downrp.pkl', 'rb')
+pickle_in2=open('/app/nfl-app/pages/classifier2downrp.pkl', 'rb')
 classifier2=load(pickle_in2)
-pickle_in3=open('/pages/classifier3downrp.pkl', 'rb')
+pickle_in3=open('/app/nfl-app/pages/classifier3downrp.pkl', 'rb')
 classifier3=load(pickle_in3)
-pickle_in4=open('/pages/classifier4downrp.pkl', 'rb')
+pickle_in4=open('/app/nfl-app/pages/classifier4downrp.pkl', 'rb')
 classifier4=load(pickle_in4)
 
 
@@ -190,7 +190,7 @@ st.markdown(directions_html, unsafe_allow_html=True)
 st.markdown(directions_html2, unsafe_allow_html=True)
 st.markdown('#')
 
-play_class=pd.read_pickle('/pages/team_play_freq2.pkl')
+play_class=pd.read_pickle('/app/nfl-app/pages/team_play_freq2.pkl')
 st.sidebar.markdown('###')
 if st.sidebar.button("Predict Your Play!"):
 
