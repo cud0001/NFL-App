@@ -109,6 +109,7 @@ receiving_stat_df=receiving_stat_df [receiving_stat_df.team_abbr.isin(selected_t
 receiving_stat_df=receiving_stat_df.reset_index()
 
 fig2, ax=plt.subplots()
+ax.set_facecolor('k')
 # plot
 ax.scatter(x=receiving_stat_df ['avg_cushion'], y=receiving_stat_df ['avg_separation'],
            c=receiving_stat_df ['team_color'])
@@ -154,6 +155,7 @@ rushing_stat_df=rushing_stat_df [rushing_stat_df.team_abbr.isin(selected_team2)]
 rushing_stat_df=rushing_stat_df.reset_index()
 
 fig3, ax=plt.subplots()
+ax.set_facecolor('k')
 # plot
 ax.scatter(x=rushing_stat_df ['percent_attempts_gte_eight_defenders'],
            y=rushing_stat_df ['rush_yards_over_expected_per_att'], c=rushing_stat_df ['team_color'])
