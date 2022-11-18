@@ -79,7 +79,7 @@ qb_epa_df1=qb_epa_df1.rename(columns={'passer_player_name': 'Quarterback'})
 qb_epa_df2=qb_epa_df1.merge
 # open figure + axis
 fig1, ax=plt.subplots()
-ax.set_facecolor(black)
+ax.set_facecolor('b')
 # plot
 ax.scatter(x=qb_epa_df1 ['QB Dropbacks'], y=qb_epa_df1 ['QB EPA per Dropback'], c='DarkBlue')
 # set labels
