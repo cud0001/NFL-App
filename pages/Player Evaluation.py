@@ -16,7 +16,7 @@ st.set_page_config(layout='wide', page_title="Player Evaluation🏈")
 st.title('Player Evaluation')
 
 st.sidebar.header('Filter Week')
-selected_year=st.sidebar.selectbox('Year', list(reversed(range(1999, 2023))))
+selected_year=st.sidebar.selectbox('Year', list(reversed(range(1999, 2024))))
 
 
 @st.cache(allow_output_mutation=True)
