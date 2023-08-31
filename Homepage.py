@@ -46,7 +46,7 @@ with col1:
     st.sidebar.markdown("Select a page above!")
 with col2:
     st.subheader('NFL Schedule')
-    selected_year=st.selectbox('Year', list(reversed(range(1999, 2023))))
+    selected_year=st.selectbox('Year', list(reversed(range(1999, 2024))))
     schedule=nfl.import_schedules([selected_year])
     selected_week=st.selectbox('Select Week', list(range(1, 23)))
     scheduledf=schedule [schedule ["week"] == selected_week]
